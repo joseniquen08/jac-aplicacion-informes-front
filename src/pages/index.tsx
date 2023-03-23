@@ -1,7 +1,15 @@
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import Head from "next/head";
+import Navbar from "@src/components/navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+
+
+const poppins = Poppins({
+   subsets: ['latin'] ,
+   weight : ['100','200','300','400','500','600','700','800','900'],
+   variable: '--font-poppins'
+ });
+
 
 export default function Home() {
   return (
@@ -12,8 +20,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="text-4xl font-semibold text-red-500">
-        <p>Holaaa</p>
+     
+      <main className={`text-3xl font-semibold text-cyan-900 font-poppins ${poppins.className}`}>
+        <Navbar/>
+        <a href="/login">Ir a Login Prueba</a>
       </main>
     </>
   );

@@ -1,0 +1,16 @@
+.background {
+    height: 105vh;
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0 24px;
+    background-color: var(--bg-color);
+    background-image: url("/src/assets/img/bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    font-family: "Euclid Circular A";
+    color: #000;
+    animation: rotate 6s infinite alternate linear;
+  }
+  

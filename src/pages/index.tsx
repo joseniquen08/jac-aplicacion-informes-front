@@ -1,15 +1,12 @@
+import { Layout } from "@src/components/Dashboard/Layout";
 import { Poppins } from "next/font/google";
 import Head from "next/head";
-import Navbar from "@src/components/navbar";
-import Sidebar from "@src/components/sidebar"
-
 
 const poppins = Poppins({
-   subsets: ['latin'] ,
-   weight : ['100','200','300','400','500','600','700','800','900'],
-   variable: '--font-poppins'
- });
-
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-poppins",
+});
 
 export default function Home() {
   return (
@@ -20,11 +17,40 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-     
-      <main className={`font-poppins ${poppins.className}`}>
-        <Navbar/>
-        <Sidebar/>
-      </main>
+      <Layout font={poppins}>
+        <>
+          <p>Pedro</p>
+          <p>Pedro</p>
+          <p>Pedro</p>
+          <p>Pedro</p>
+          <p>Pedro</p>
+          <p>Pedro</p>
+          <p>Pedro</p>
+          <p>Pedro</p>
+          <p>Pedro</p>
+          <p>Pedro</p>
+          <p>Pedro</p>
+          <p>Pedro</p>
+          <p>Pedro</p>
+          <p>Pedro</p>
+          <p>Pedro</p>
+          <p>Pedro</p>
+          <p>Pedro</p>
+          <p>Pedro</p>
+          <p>Pedro</p>
+          <p>Pedro</p>
+          <p>Pedro</p>
+          <p>Pedro</p>
+          <p>Pedro</p>
+          <p>Pedro</p>
+          <p>Pedro</p>
+          <p>Pedro</p>
+          <p>Pedro</p>
+          <p>Pedro</p>
+          <p>Pedro</p>
+          <p>Pedro</p>
+        </>
+      </Layout>
     </>
   );
 }

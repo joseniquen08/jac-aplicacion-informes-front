@@ -24,7 +24,7 @@ const Sidebar = () => {
               />
             </svg>
             <li className="px-4 py-2 rounded-md lg:block">
-              <Link href="/dashboard">Datos Generales</Link>
+              <Link href="/datos-generales">Datos Generales</Link>
             </li>
           </div>
 

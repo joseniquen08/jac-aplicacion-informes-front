@@ -63,7 +63,7 @@ const Navbar = ({ isOpen, toggle }: Props) => {
           <ul className="flex space-x-5">
             <li>
               <Link
-                href="/"
+                href="/dashboard"
                 className="px-1 py-2 text-white hover:text-gray-200"
               >
                 Inicio
